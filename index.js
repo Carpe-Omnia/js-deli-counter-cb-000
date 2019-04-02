@@ -12,3 +12,15 @@ function nowServing(line) {
     return temp ;
   }
 }
+function currentLine(line){
+  if (line.length == 0){return ("The line is currently empty.")}
+  else{
+    var temp = "The line is currently:" ;
+    for (var i = 0 ; i < line.length - 1; i++){
+      temp += ` ${i + 1}. ${line[i]},`
+    }
+    temp += ` ${line.length }. ${line[line.length]}` ;
+    return temp ;
+    console.log(temp) ;
+  }
+}
