@@ -20,7 +20,7 @@ function currentLine(line){
     for (var i = 0 ; i < line.length - 1; i++){
       temp += ` ${i + 1}. ${line[i]},`
     }
-    temp += ` ${line.length }. ${line[line.length]}` ;
+    temp += ` ${line.length }. ${line[line.length - 1]}` ;
     return temp ;
     console.log(temp) ;
   }
